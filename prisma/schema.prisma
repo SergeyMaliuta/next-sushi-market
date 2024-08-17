@@ -22,6 +22,7 @@ model User {
     cart             Cart?
     order            Order[]
     verificationCode VerificationCode?
+    
 }
 
 model Category {
@@ -70,13 +71,13 @@ model Cart {
 }
 
 model CartItem {
-    id            Int          @id @default(autoincrement())
-    productItem   ProductItem  @relation(fields: [productItemId], references: [id])
+    id Int @id @default(autoincrement())
+    cart   Cart @relation(fields: [cartId], references: [id])
+    cartId Int
+    productItem   ProductItem @relation(fields: [productItemId], references: [id])
     productItemId Int
-    cart          Cart         @relation(fields: [cartId], references: [id])
-    cartId        Int
-    quantity      Int
-    ingredient    Ingredient[]
+    quantity Int @default(1)
+    ingredients Ingredient[]
 }
 
 model Order {

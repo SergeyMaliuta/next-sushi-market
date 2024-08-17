@@ -11,31 +11,31 @@ export const categories = [
 export const ingredients = [
   {
     name: "Ginger",
-    price: 0.1,
+    price: 1,
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_81/64895cd4bb470-450x450.png",
   },
   {
     name: "Wasabi",
-    price: 0.1,
+    price: 1,
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_83/64896a245cec1-450x450.png",
   },
   {
     name: "Soy sauce",
-    price: 0.1,
+    price: 1,
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_82/64895c8210ff2-450x450.png",
   },
   {
     name: "Sesame sauce",
-    price: 0.1,
+    price: 1,
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_79/648a854e71217-450x450.png",
   },
   {
     name: "Sticks",
-    price: 0.1,
+    price: 1,
     imageUrl: "https://i.ibb.co/QnCTrDd/64895c5e71f83-450x450.png",
   },
 ].map((obj, index) => ({ id: index + 1, ...obj }));
@@ -60,42 +60,42 @@ export const products = [
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_56/64227193c6789-450x450.png",
     categoryId: 2,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "Philadelphia cucumber",
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_58/642272206b959-450x450.png",
     categoryId: 2,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "Philadelphia",
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_55/64227048a53d9-450x450.png",
     categoryId: 2,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "California",
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_46/6422680db5177-450x450.png",
     categoryId: 2,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "Dragon",
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_44/6422627686e73-450x450.png",
     categoryId: 2,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "Bonito maquis",
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_42/642261f21d1ef-450x450.png",
     categoryId: 2,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "Profitable",
@@ -145,42 +145,42 @@ export const products = [
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_1263/64199a627f7fe-450x450.png",
     categoryId: 4,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "Hudson",
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_1264/64199a225ba02-450x450.png",
     categoryId: 4,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "Bosphorus",
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_1265/64199a771b141-450x450.png",
     categoryId: 4,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "Congo",
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_1266/641999f4d97c9-450x450.png",
     categoryId: 4,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "Elba",
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_1267/64199abb65ea9-450x450.png",
     categoryId: 4,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "La Manche",
     imageUrl:
       "https://storage.yandexcloud.net/sushi-market/products/product_1268/64199a9d9ee4a-450x450.png",
     categoryId: 4,
-    price: 0.6,
+    price: 1,
   },
   {
     name: "Eel tempura",

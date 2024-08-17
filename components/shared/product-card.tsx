@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Title } from "./title";
 import { Button } from "../ui";
 import { Plus } from "lucide-react";
+import { useCartStore } from "@/store";
+import { Product } from "@prisma/client";
 
 interface Props {
   id: number;
@@ -23,6 +25,15 @@ export const ProductCard: React.FC<Props> = ({
     e.preventDefault();
     window.location.href = `/product/${id}`;
   };
+
+  const addCartItem = useCartStore((state) => state.addCartItem);
+
+  const onAddProduct = () => {
+    addCartItem({
+      productItemId: id,
+    });
+  };
+
   return (
     <div className={className}>
       <Link href={`/product/${id}`} onClick={handleClick}>
@@ -34,16 +45,21 @@ export const ProductCard: React.FC<Props> = ({
           Rice, nori, lightly salted salmon, shrimp, mango-chili sauce, tuna
           shavings, cucumber, cream cheese
         </p>
-        <div className="flex justify-between items-center mt-4">
-          <span className="text-[20px]">
-            unit <b>${price}</b>
-          </span>
-          <Button variant="secondary" className="text-base font-bold">
-            <Plus size={20} className="mr-1" />
-            Add
-          </Button>
-        </div>
       </Link>
+      <div className="flex justify-between items-center mt-4">
+        <span className="text-[20px]">
+          unit <b>${price}</b>
+        </span>
+
+        <Button
+          onClick={onAddProduct}
+          variant="secondary"
+          className="text-base font-bold"
+        >
+          <Plus size={20} className="mr-1" />
+          Add
+        </Button>
+      </div>
     </div>
   );
 };

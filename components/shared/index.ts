@@ -1,3 +1,5 @@
+export { CartDrawer } from './cart-drawer';
+export { CartButton } from "./cart-button";
 export { ProductCard } from "./product-card";
 export { CheckboxFiltersGroup } from "./checkbox-filters-group";
 export { RangeSlider } from "./range-slider";

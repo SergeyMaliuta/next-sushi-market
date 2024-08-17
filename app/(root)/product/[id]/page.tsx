@@ -2,6 +2,7 @@
 import { Container, ProductImage, Title } from "@/components/shared";
 import { Button } from "@/components/ui";
 import { prisma } from "@/prisma/prisma-client";
+import { useCartStore } from "@/store";
 import { notFound } from "next/navigation";
 export default async function ProductPage({
   params: { id },
@@ -28,6 +29,7 @@ export default async function ProductPage({
   if (!product) {
     return notFound();
   }
+
   return (
     <Container className="flex flex-col my-10">
       <div className="flex flex-1">
